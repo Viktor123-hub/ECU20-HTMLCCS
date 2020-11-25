@@ -13,10 +13,43 @@
         .border {
             border: 1px solid black;
         }
+        .custom-class  {
+            background: black;
+        }
+/* Medium devices (tablets, 768px and up) */
+        @media(min-width: 768px) {
+            .custom-class {
+                background: green;
+            }
+        }
+
+        /* Large devices (desktops, 992px and up) */
+        @media(min-width: 992px) {
+            .custom-class {
+                background: blue;
+            }
+        }
+
+/* extra large devices,large desktops, 1200px and up */
+        @media(min-width: 1200px) {
+            .custom-class {
+                background: yellow;
+            }
+        }
+
+
+/* extra extra large devices */
+        @media(min-width: 1600px) {
+            .custom-class {
+                background: orange;
+            }
+        }
+
+
     </style>
 </head>
 
-<body>
+<body class="custom-class">
 
 <!-- BLOCK ELEMENT -->
 <section class="border">Section</section>
@@ -34,6 +67,82 @@
 <h4 class="border">H4</h4>
 <h5 class="border">H5</h5>
 <h6 class="border">H6</h6>
+
+<hr>
+<br>
+
+<!-- INLINE ELEMENT -->
+<i class="border">italic</i>
+<em class="border">emphasize</em>
+<b class="border">bold</b>
+<strong class="border">stron</strong>
+<u class="border">underline</u>
+<span class="border">span</span>
+<small class="border">small</small>
+<del class="border">del</del>
+<s class="border">s</s>
+
+<a class="border" href="https://www.google.com" target="_blank">sök</a>
+
+
+<!-- LISTOR -->
+
+<ul class="border">
+    <li>unordered list item</li>
+    <li class="border">unordered list item</li>
+    <li>unordered list item</li>
+</ul>
+
+<ol class="border">
+    <li>ordered list item</li>
+    <li>ordered list item</li>
+    <li>ordered list item</li>
+</ol>
+
+<!-- TABLE -->
+<table>
+    <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>column</td>
+            <td>column</td>
+        </tr>
+        <tr>
+
+            <td>column</td>
+            <td>column</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+
+<!-- Bilder finns på pexel.com -->
+
+
+<div>
+    <img width="350px" src="https://images.pexels.com/photos/5852904/pexels-photo-5852904.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="beskrivande text">   
+</div>
+
+<!-- Bra struktur -->
+<div>
+    <div>
+        <div>
+            <p>HEJ</p>
+        </div>
+        <div>
+            <p>Hej Hej</p>
+        </div>
+    </div>
+</div>
+
+
+
 
 </body>
 
