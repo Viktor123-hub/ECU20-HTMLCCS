@@ -1,0 +1,17 @@
+:root {
+    --primary: rgb(180, 56, 108);
+    --secondary: rgb(190, 129, 129); 
+
+}
+.bg-primary{
+    background: var(--secondary) !important;
+}
+
+.box {
+    background-color: var(--bg-primary);
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+
+}
