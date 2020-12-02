@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container mt-5">
-    <form> <!--action="page.php" method="GET" -->
+    <form id="regForm" action="thanks.html"> <!--action="page.php" method="GET" -->
         <!--
             GET - Skickar datan i url, funkar när man söker efter någonting eller hämtar information
                 Men absolut INTE känslig data som lösenord m.m.
@@ -27,8 +27,79 @@
 
             Dom här valen brukar man hantera med javascript istället för då får vi bättre kontroll.
         -->
-        <label for="FirstName">First name:</label>
-        <input type="text" id="FirstName" name="FirstName">
+        <div class="form-group">
+            <label for="FirstName">First name:</label>
+            <input class="form-control" type="text" id="FirstName" name="FirstName" placeholder="Enter first name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="form-control" type="emial" name="emial" id="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input class="form-control" type="password" name="password" id="password">
+        </div>
+       
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="1" max="5">
+        </div>
+
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date"> 
+        </div>
+
+        <!-- SELECT-->
+        <div>
+            <label for="role">Role:</label>
+            <select name="role" id="role">
+                <option value="" disabled selected></option>
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+                <option value="guest">Guest</option>
+            </select>
+        </div>
+
+        <!-- RADIOBUTTONS!-->
+        <p>Gender:</p>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="male">Female</label>
+
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="male">Other</label>
+        </div>
+
+        <!-- Checkboxes-->
+        <div>
+            <div class="terms">
+                <input type="checkbox" name="terms" id="terms" required>
+                <label for="terms">I have read and agree to the terms and conditions</label>
+            </div>
+            <div class="news">
+                <input type="checkbox" name="news" id="news" checked>
+                <label for="news">I would like to subscribe to the newsletter</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="message">Message:</label>
+            <br>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter message..."></textarea>
+        </div>
+
+        <input class="btn btn-secondary" type="submit" name="submit" id="submit" disabled>
+        <button class="btn btn-primary">Submit</button>
+
+
+
+
     </form>
 </div>
     
