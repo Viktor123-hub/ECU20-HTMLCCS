@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.clr {
+    clear: both;
+}
+.box {
+    border: 1px solid black;
+    padding: 2rem;
+    width: 33.3%;
+    float: left;
+    min-height: 300px;
+}
+#section-2 {
+    margin-top: 2rem;
+}
+.main {
+    border: 1px solid black;
+    width: 70%;
+    padding: 3rem 1rem;
+    float: left;
+}
+#section-2 aside {
+    background-color: #333333;
+    color: #fff;
+    width: 30%;
+    float: right;
+}
+#section-2 li {
+    list-style: none;
+    padding: 1rem 3rem;
+}

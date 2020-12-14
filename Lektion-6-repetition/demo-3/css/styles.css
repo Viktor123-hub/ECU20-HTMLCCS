@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#top-nav {
+    background-color: darkmagenta;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.logo {
+    font-size: 3rem;
+}
+ul {
+    display: flex;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #fff;
+    
+}
+li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5rem;
+    display: inline-block;
+}
+li a:hover {
+    background: rgb(90, 57, 57);
+    
+}
