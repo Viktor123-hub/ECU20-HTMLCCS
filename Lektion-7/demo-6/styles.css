@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar-brand {
+    color: #fff;
+    text-emphasis: none;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+    "navbar navbar"
+    "side   gallery"
+    ;
+}
+#main-nav {
+    background-color: rgb(98, 0, 128);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+}
+.navbar-nav {
+    display: flex;
+}
+.navbar-nav li {
+    list-style: none;
+}
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+}
+.nav-link:hover {
+    background-color: mediumslateblue;
+}
+
+#side-menu {
+    grid-area: side;
+    padding: 1rem;
+    background-color: #2c1136;
+}
+#side-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 2rem 0;
+}
+#gallery {
+    grid-area: gallery;
+    margin-right: 2rem;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr)) ;
+    gap: 1rem;
+}
+.img{
+    background-color: #929292;
+    display: flex;
+    
+}
