@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+}
+.ball {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: purple;
+}

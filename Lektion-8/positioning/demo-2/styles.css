@@ -1,0 +1,28 @@
+.card {
+    border: 1px solid #333;
+    box-shadow: 2px 2px 5px 0 #333;
+    margin-top: 3rem;
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+}
+
+.ball:hover ~ #ball {
+    background-color: teal;
+}
+
+.ball {
+    background-color: seagreen;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
